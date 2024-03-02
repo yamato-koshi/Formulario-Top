@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(4102879_971.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 1px solid rgba(248, 246, 246, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input_box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative; /* Adicionado para posicionamento do ícone */
+}
+
+.input_box input {
+    width: calc(100% - 45px); /* Ajustado o tamanho para acomodar o ícone */
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 20px;
+    padding-right: 45px; /* Espaçamento ajustado para acomodar o ícone */
+    color: #fff; /* Cor adicionada para o texto */
+}
+
+.input_box input::placeholder {
+    color: #fff;
+}
+
+.input_box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff; /* Cor adicionada para o ícone */
+}
+
+.wrapper .remember_forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember_forgot label input {
+    /* Accent-color removido */
+    margin-left: 3px;
+}
+
+.remember_forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember_forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .submit_button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 15px; /* Espaçamento adicionado para separar o botão */
+    transition: all 0.9s;
+}
+.wrapper .submit_button:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(195, 116, 240, 0.322);
+}
+
+.wrapper .register_link{
+    font-size: 14.5;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register_link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register_link p a:hover{
+    text-decoration: underline;
+}
